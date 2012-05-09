@@ -11,21 +11,17 @@
 			</a>
 			<div class='nav-collapse'>
 				<ul class='nav'>
+					{% for page in navigation %}
+					{% if permalink == page.permalink %}
 					<li class='active'>
-						<a href='index.html'>
-							O Klanie
-						</a>
-					</li>
+					{% else %}
 					<li>
-						<a href='squad.html'>
-							Skład
+					{% endif %}
+						<a href='{{relative_root}}{{page.slug}}/index.html'>
+							{{page.name}}
 						</a>
 					</li>
-					<li>
-						<a href='history.html'>
-							Historia
-						</a>
-					</li>
+					{% endfor %}
 					<li>
 						<a href='http://56ks.pun.pl/'>
 							Forum
