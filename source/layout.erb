@@ -35,7 +35,7 @@
 					</a>
 					<div class='nav-collapse'>
 						<ul class='nav'>
-							<% {'index.html' => 'O Klanie', 'squad.html' => 'Skład', 'history.html' => 'Historia'}.each do |file, name| %>
+							<% {'index.html' => 'O Klanie', 'squad.html' => 'Skład', 'history.html' => 'Historia', 'contact.html' => 'Kontakt'}.each do |file, name| %>
 							<li <%= request.path_info == file ? "class='active'" : "" %>>
 								<%= link_to name, file %>
 							</li>
