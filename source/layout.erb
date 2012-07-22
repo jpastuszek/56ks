@@ -56,14 +56,34 @@
 								</a>
 							</li>
 						</ul>
+						<form class="navbar-search pull-right" method="post" action="http://56ks.pun.pl/login.php?action=in">
+							<input type="hidden" name="form_sent" value="1" />
+							<input type="hidden" name="redirect_url" value="forums.php" />
+							<ul class='nav pull-right'>
+								<li>
+									<input class="input-mini" placeholder="Login" type="text" name="req_username" tabindex="1" />
+								</li>
+								<li>&nbsp;</li>
+								<li>
+									<input class="input-mini" placeholder="Hasło" type="password" name="req_password" tabindex="2" />
+								</li>
+								<li>&nbsp;</li>
+								<li>
+									<div class='btn-group' style='margin-top: 0px;'>
+										<button type="submit" class="btn btn-primary">Zaloguj</button>
+										<button class="btn dropdown-toggle btn-primary" data-toggle="dropdown">
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a href='http://56ks.pun.pl/register.php' target='_blanc'>Zarejestruj się &raquo;</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</div>
+						</form>
 					</div>
-					<form class="navbar-form pull-right form-inline" method="post" action="http://56ks.pun.pl/login.php?action=in">
-						<input type="hidden" name="form_sent" value="1" />
-						<input type="hidden" name="redirect_url" value="forums.php" />
-						<input class="input-mini" placeholder="Login" type="text" name="req_username" tabindex="1" />
-						<input class="input-mini" placeholder="Hasło" type="password" name="req_password" tabindex="2" />
-						<button type="submit" class="btn btn-primary">Zaloguj &raquo;</button>
-					</form>
 				</div>
 			</div>
 		</div>
