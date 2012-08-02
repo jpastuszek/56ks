@@ -56,6 +56,19 @@
 				border: 1px solid #999;
 			}
 		</style>
+		<!-- Optional extension scripts -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<%= javascript_include_tag 'jquery' %>
+		<%= javascript_include_tag 'bootstrap' %>
+		<%= javascript_include_tag 'bootstrap-tooltip' %>
+		<script>
+			$(document).ready(function(){
+				$('#download').tooltip({trigger: 'manual', placement: 'right'})
+			})
+			$(window).load(function () {
+				$('#download').tooltip('show')
+			});
+		</script>
 	</head>
 	<body>
 		<div class='navbar navbar-fixed-top'>
@@ -139,10 +152,6 @@
 				</span>
 			</footer>
 		</div>
-		<!-- Optional extension scripts -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<%= javascript_include_tag 'jquery' %>
-		<%= javascript_include_tag 'bootstrap' %>
 	</body>
 </html>
 
